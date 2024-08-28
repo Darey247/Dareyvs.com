@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="Styles.css" rel="stylesheet">
+</head>
+<body>    
+    <header class="header">
+        <a href="Index.html" class="logo">Darey's
+        <span>VisualStudio</span></a>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="Education.html">Education</a>
+            <a href="Services.html">Services</a>
+            <a href="Testimonials.html">Testimonials</a>
+            <a href="Contacts.html">Contacts</a>
+        </nav>
+    </header>
+    <div class="edu">
+        <div class="edu-content">
+             <img src="Images/darey.png">
+         </div>
+          <div class="b">
+                <h1 class="sub">Life In A Nutshell</h1>
+                <p>Damilare Fasoranti(Darey) was born on 18th September 2005(Aged 18),<br>went through the bsic to secondary school with an "O" level certificate</br> and still a tertiary institution scholar.</p>
+                <a href="Contacts.html" class="btn">Hire Me!</a>
+             <div class="tabs">
+                <p class="tablinks active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tablinks" onclick="opentab('experience')">Experience</p>
+                <p class="tablinks" onclick="opentab('education')">Education</p>
+             </div>
+             <div class="tabcons active-tab" id="skills">
+                <ul>
+                   <li><span>Web Development</span><br>Designing Web Interfaces</li>
+                   <li><span>Graphic Design</span><br>Creating World class Graphics</li>
+                   <li><span>Gaming</span><br>Testing Games</li>
+                </ul>
+             </div>
+             <div class="tabcons" id="experience">
+                <ul>
+                   <li><span>Web Development</span><br>Designing Web Interfaces</li>
+                   <li><span>Graphic Design</span><br>Creating World class Graphics</li>
+                   <li><span>Gaming</span><br>Testing Games</li>
+                </ul>
+             </div>
+             <div class="tabcons" id="education">
+                <ul>
+                   <li><span>Web Development</span><br>Designing Web Interfaces</li>
+                   <li><span>Graphic Design</span><br>Creating World class Graphics</li>
+                   <li><span>Gaming</span><br>Testing Games</li>
+                </ul>
+             </div>
+          </div>
+        </div>  
+        <div class="copyright">
+            <p>Copyright Darey Visual Studio.</p>
+        </div>  
+    </div>
+<script>
+
+
+    var tablinks = document.getElementsByClassName("tablinks");
+    var tablinks = document.getElementsByClassName("tablinks");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcon of tabcons){
+            tabcon.classlist.remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        }
+</script>    
+</body>
+</html>
