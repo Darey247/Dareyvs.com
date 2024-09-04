@@ -442,8 +442,8 @@ section .services-listb{
     margin-top: 30px;
 }
 
-.contact-left p ion icon{
-    color: var(--main-color);
+.contact-left p i{
+    color: var(--text-color);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -461,7 +461,7 @@ section .services-listb{
 }
 
 .social-icons a:hover{
-    color: var(--main-color);
+    color: var(--color);
     transform: translateY(-5px);
 }
 
