@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/8a020650a5.js" crossorigin="anonymous"></script>
     <link href="Styles.css" rel="stylesheet">
-    <title>Darey's Visual Studio</title>
+    <title>Darey Visual Studio</title>
 </head>
 <body>    
     <header class="header">
         <a href="index.html" class="logo">Darey's
         <span>VisualStudio</span></a>
 
-        <nav>
+        <nav id="sidemenu">
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
             <a href="index.html" class="active">Home</a>
-            <a href="Education.html">Education</a>
-            <a href="Services.html">Services</a>
-            <a href="Testimonials.html">Testimonials</a>
-            <a href="Contacts.html">Contacts</a>
-            <ion-icon name="menu-outline"></ion-icon>
+            <a href="education.html">Education</a>
+            <a href="services.html">Services</a>
+            <a href="testimonials.html">Testimonial</a>
+            <a href="contacts.html">Contacts</a>
+
         </nav>
     </header>
     <section class="home">
@@ -31,16 +32,49 @@
             <h3 class="typing-text">I'm a <span></span></h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nihil modi pariatur, veniam id accusantium eaque reprehenderit sit. Odio atque illo quo vitae iure minima libero nulla earum quisquam beatae.</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=61557368003677"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
-                <a href="https://api.whatsapp.com/send/?phone=2349166021991&text&type=phone_number&app_absent=0"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="https://www.facebook.com/dareyvisualsstudio"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
             </div>
             <a href="Contacts.html" class="btn">Hire Me</a>
         </div>    
     </section>
+    <section class="home-con">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Gfps75Z0GFM?si=RTN166bZ0d0z4Q2m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="services-listb">
+            <div>
+                <p>Know more about me</p>
+                <a href="education.html">Read</a>
+            </div>
+            <div>
+                <p>Take A Glance of my works</p>
+                <a href="testimonials.html">Admire</a>
+            </div>
+            <div>
+                <p>Dive into a quick way to me</p>
+                <a href="contacts.html">Contact</a>
+            </div>
+            <div>
+                <p>Choose your choice</p>
+                <a href="services.html">Hire</a>
+            </div>
+        </div>
+    </section>
     <div class="copyright">
         <p>Copyright Darey Visual Studio.</p>
     </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
